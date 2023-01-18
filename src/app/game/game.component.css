@@ -1,0 +1,84 @@
+.game-main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.vdo video{
+  
+    z-index: -9000;
+    margin-left: -86px;
+    /* width: 10%; */
+    position: fixed;
+    top: 0;
+    width: 110%;
+}
+
+.game-board
+{
+    width: 60%;
+    height: 70%;
+    border-radius: 2rem;
+    /* background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3)); */
+    background: transparent;
+    z-index: 3;
+    backdrop-filter: blur(0.9rem);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 18px;
+
+}
+.game-board:focus{
+    background-color: white;
+}
+.square
+{
+    width: 99%;
+    height: 99%;
+    border-width: 2px;
+    border-style:solid;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+}
+.square:hover{
+    cursor: pointer;
+    background: rgba(255,54, 255,0.5);
+}
+/* .square::after
+{
+    background-color: white;
+} */
+/* .circle,.circle1
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    position: absolute;
+    
+} */
+div:focus {
+    background-color:red;
+}
+.circle{
+    bottom: 5%;
+    left: 15%;
+}
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+h3{
+    position: absolute;
+    top: 4%;
+    margin-left: 46%;
+    font-size: 20px;
+    color: white;
+}
